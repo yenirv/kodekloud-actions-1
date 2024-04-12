@@ -9,8 +9,8 @@ jobs:
         - name: Checkout Repo
           uses: actions/checkout@v4   
 
-        - name: Set PATH
-          run: echo 'export PATH="/usr/games:$PATH"' >> ~/.bashrc
+        - name: Start a login shell
+          run: bash -l
 
         - name: Install cowsay
           run: sudo apt install cowsay
