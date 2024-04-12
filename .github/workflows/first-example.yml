@@ -6,8 +6,8 @@ jobs:
     first_job:
         runs-on: ubuntu-22.04
         steps:
-        - name: Checkout Repo
-          uses: actions/checkout@v2     
+   #     - name: Checkout Repo
+        - uses: actions/checkout@v4   
 
         - name: List and read file
           run: |
