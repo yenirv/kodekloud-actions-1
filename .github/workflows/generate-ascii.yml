@@ -34,7 +34,7 @@ jobs:
         name: dragon-text-file
  
   deploy_job_3:
-    needs: build_job_2
+    needs: test_job_2
     runs-on: ubuntu-latest 
     steps:
     - name: Download Dragon text file
